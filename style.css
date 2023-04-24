@@ -1,0 +1,243 @@
+/*
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Pha Hieu Dat
+  ID:s979760
+  Acknowledgement: https://www.w3schools.com/html/default.asp (W3 school) 
+                   https://developer.mozilla.org/en-US/  (MDN Web Docs*/
+
+
+body {
+    background-color: #272dbf;
+    color: white
+}
+
+button {
+	background-color: #f64c71;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* NAVBAR  */
+.navbar {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E61E2A;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #23cf17;
+    text-decoration: none;
+}
+.navbar img{width:50px; height:50px;}
+
+.mobile-nav-icon{
+  float: right;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  display: none;
+}
+  @media (max-width: 768px 
+         ) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+        
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: inline;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+     
+    }
+
+    .navbar:hover {
+        display: block;
+       
+        
+    }
+  }
+}
+/* END NAVBAR  */
+/* footer navbar*/
+.navbarf {
+    
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8f6164;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+    
+  
+  
+}
+
+.navbarf ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarf li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navbarf a {
+    color: #23cf17;
+    text-decoration: none;
+}
+/* end footer .navbar*/ 
+.h2{text-align: center;
+  color: #f1f514;
+   }
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  
+}
+.product {
+	width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+}
+@media(max-width: 768px;)
+{.container{
+  padding: auto;}}
+
+.product img {
+	width: 100%;
+	height: 330.63px;
+}
+
+.product h2 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+  color: #747411;
+  
+  font-family: 'Xanh Mono', monospace;
+
+}
+
+.product p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.form_box{
+  display: block;
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+.small_image_container{
+  width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+  flex-direction: column;
+}
+
+
+.small_image img{
+  width: 200px;
+	height: 200px;
+                          }
+.big_image{
+  width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+}
+.big_image img{
+  width: 100%;
+  height: 100%;
+}
+ul.breadcrumb li{display: inline;
+  
+  
+  margin: 0;}
+ul.breadcrumb li+li:before{content: '>';}
+
+.breadcrumb-item a{color: white;}
+.containerf {
+  
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+}
+.container_for_video{flex-wrap: nowrap;}
+
+@media (max-width: 768px 
+         ) {
+  .container{flex-direction: column;
+            align-items: center;}
+  .container_for_bread{padding: auto;}
+  
+  .small_image_container{
+  
+  justify-content: space-around;
+  width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+  flex-direction: row;
+  float: left;
+  display: flex;
+
+         }}
+ul.breadcrumb{ display: inline;}
